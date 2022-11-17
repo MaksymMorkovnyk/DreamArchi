@@ -1,0 +1,142 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #71c63e;
+    --header: #444551;
+    --background-dropdown-menu: #3c3c47;
+    --border: #3f4048;
+    --grey: #5f5e5e;
+    --grey-line: #a1a1a1;
+    --light-grey: #D8D8D8;
+    --dark-blue-background: #05323a;
+    --font: 'Hind', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 100px;
+    padding-left: 20px;
+}
+
+.table {
+    // border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 2px;
+}
+
+/* DROPDOWNMENU
+=============================== */
+
+.my-navbar {
+    background-color: var(--header);
+    padding-left: 0;
+}
+
+.my-project .my-navbar.navbar-light a.my-navbar__link {
+    color: var(--white);
+}
+
+.my-navbar li:not(:last-child) .my-navbar__link {
+    border-right: 2px solid var(--border);
+}
+
+.my-navbar__dropdown .my-navbar__dropdown-menu {
+    top: calc(100% + .5rem);
+    margin-top: 0;
+    border: none;
+    background-color: var(--background-dropdown-menu);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.my-project .my-navbar__dropdown-menu a.my-navbar__dropdown-menu-link {
+    color: var(--white);
+}
+
+.my-navbar__dropdown-menu a:not(:last-child) {
+    border-bottom: 2px solid var(--header);
+}
+
+.my-project .my-navbar.navbar-light a.my-navbar__link:hover,
+.my-project .my-navbar.navbar-light a.my-navbar__link:focus,
+.my-project .my-navbar.navbar-light a.my-navbar__link:active,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:hover,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:focus,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:active {
+    color: var(--green);
+}
+
+.my-project .my-navbar .my-navbar__dropdown-menu a:hover,
+.my-project .my-navbar .my-navbar__dropdown-menu a:focus,
+.my-project .my-navbar .my-navbar__dropdown-menu a:active {
+    background-color: unset;
+}
+
+@media (max-width: 991px) {
+    .my-navbar li:not(:last-child) .my-navbar__link {
+        border-right: none;
+    }
+
+    .my-project .my-navbar {
+        padding: 0;
+    }
+
+    .logo {
+        padding-top: 20px;
+    }
+}
+
+/* SIDE
+=============================== */
+
+
+
+/* MAIN
+==================================== */
+
+.aside {
+    grid-area: sidebar;
+    background-color: #caa227;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: #08d17d;
+}
+
+.section {
+    grid-area: sect1;
+    background-color: #1c08d1;
+}
+
+.project_004 {
+    grid-area: main;
+    background-color: #d10808;
+}
+
+.grid-container {
+    // background-color: #a3a29f;
+    // max-width: 96%;
+    // padding-top: 50px;
+    
+    // grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "sidebar header header"
+        "sect1 header header"
+        "main footer project006";
+}
