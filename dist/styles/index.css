@@ -24,10 +24,6 @@ body {
   margin-right: 100px;
   padding-left: 20px; }
 
-.table {
-  border: 2px solid #c8c8c8;
-  letter-spacing: 2px; }
-
 /* DROPDOWNMENU
 =============================== */
 .my-navbar {
@@ -81,26 +77,70 @@ body {
 =============================== */
 /* MAIN
 ==================================== */
-.aside {
-  grid-area: sidebar;
-  background-color: #caa227; }
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.header {
-  grid-area: header;
-  background-color: #08d17d; }
-
-.section {
-  grid-area: sect1;
-  background-color: #1c08d1; }
-
-.project_004 {
-  grid-area: main;
-  background-color: #d10808; }
-
-.grid-container {
+.grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "sidebar header header" "sect1 header header" "main footer project006"; }
+  width: 96%;
+  grid-template-columns: 10px [project-start] repeat(3, [content] 1fr) [project-end];
+  grid-template-rows: repeat(5, [content] 1fr);
+  grid-template-areas: "begin . project002 project002" "begin . project002 project002" "begin . . project006" "begin project007 project007 project006" "begin project007 project007 .";
+  grid-gap: 10px;
+  margin: 10px; }
+
+.grid > div {
+  padding: 5px; }
+
+.grid > div > img {
+  width: 100%; }
+
+.grid > :nth-child(1) {
+  background-color: var(--light-grey);
+  grid-row: begin;
+  grid-column: begin; }
+
+.grid > :nth-child(2) {
+  background-color: var(--light-grey);
+  grid-column: content;
+  grid-row: 1; }
+
+.grid > :nth-child(3) {
+  background-color: var(--light-grey);
+  grid-column: project002;
+  grid-row: project002; }
+
+.grid > :nth-child(4) {
+  background-color: var(--light-grey);
+  color: #800;
+  grid-column: content;
+  grid-row: 2; }
+
+.grid > :nth-child(5) {
+  background-color: var(--light-grey);
+  grid-column: content;
+  grid-row: 3; }
+
+.grid > :nth-child(6) {
+  background-color: var(--light-grey);
+  grid-column: content 2;
+  grid-row: 3; }
+
+.grid > :nth-child(7) {
+  background-color: var(--light-grey);
+  grid-column: project006;
+  grid-row: project006; }
+
+.grid > :nth-child(8) {
+  background-color: var(--light-grey);
+  grid-column: project007;
+  grid-row: project007; }
+
+.grid > :nth-child(9) {
+  background-color: var(--light-grey);
+  grid-column: content 3;
+  grid-row: 5; }
 
 /*# sourceMappingURL=index.css.map */
