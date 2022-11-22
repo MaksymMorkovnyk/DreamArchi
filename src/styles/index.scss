@@ -428,7 +428,7 @@ img {
 /* FOOTER
 ========================================================== */
 .archi-footer {
-    height: 120px;
+    height: 200px;
     background: rgba($color: #444551, $alpha: 0.7);
     color: var(--white);
     font-size: 16px;
@@ -445,7 +445,8 @@ img {
 .nav_archi-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding: 10px;
 }
 
 .archi-footer__logo {
@@ -455,6 +456,10 @@ img {
     font-size: 17px;
     color: var(--white);
     margin-inline-end: auto;
+}
+
+.footer__contacts {
+    text-align: right;
 }
 
 .archi-footer-socials {
