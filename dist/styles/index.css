@@ -6,6 +6,7 @@
   --light-green: #517040;
   --header: #444551;
   --background-dropdown-menu: #3c3c47;
+  --background: rgba($color: rgb(90, 90, 90), $alpha: 0.9);
   --border: #3f4048;
   --grey: #5f5e5e;
   --grey-line: #a1a1a1;
@@ -22,9 +23,11 @@ body {
   font-size: 16px;
   color: var(--white);
   min-height: 100vh;
-  margin: 0; }
+  margin: 0;
+  background-color: var(--background); }
 
 .header {
+  position: absolute;
   left: 0;
   top: 0;
   max-width: 100%;
@@ -52,7 +55,8 @@ body {
 .image {
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
 
 .image:hover img {
   transform: scale(1.15);
@@ -78,7 +82,6 @@ img {
 .my-navbar {
   background-color: rgba(68, 69, 81, 0.7);
   padding-left: 0;
-  position: sticky;
   top: 0;
   left: 0;
   z-index: 2; }
@@ -135,7 +138,8 @@ img {
   margin-top: 50px;
   margin-bottom: 50px;
   color: var(--white);
-  text-shadow: 0 0 0.5em #4d4d4d, 0 0 0.5em #4d4d4d, 0 0 0.5em #4d4d4d; }
+  text-shadow: 0 0 0.5em #4d4d4d, 0 0 0.5em #4d4d4d, 0 0 0.5em #4d4d4d;
+  z-index: 5; }
 
 .line {
   top: 0;
