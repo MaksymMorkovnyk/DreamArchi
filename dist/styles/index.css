@@ -70,7 +70,7 @@ img {
 .image-desc {
   display: none;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 20px;
   width: 100%;
   font-size: 20px;
@@ -417,8 +417,24 @@ img {
 
 /*Responsive*/
 /* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: flex;
+    flex-direction: column; }
+
+  .content {
+    width: 80%;
+    margin: auto; }
+
+  .video {
+    width: 80%;
+    height: 80%;
+    margin: auto; } }
 /* 768px - 992px */
 /* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90%; } }
 /* 320px - 576px */
 
 /*# sourceMappingURL=index.css.map */
