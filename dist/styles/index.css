@@ -465,7 +465,7 @@ img {
     padding-bottom: 10px; }
 
   .image-desc {
-    font-size: 19px; } }
+    font-size: 18px; } }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
   .content {
@@ -480,9 +480,6 @@ img {
 
   .archi-title {
     font-size: 20px; }
-
-  .image-desc {
-    font-size: 18px; }
 
   .archi-footer {
     font-size: 14px; }
