@@ -579,6 +579,10 @@ img {
         padding-top: 60px;
         padding-bottom: 10px;
     }
+
+    .image-desc {
+        font-size: 18px;
+    }
 }
 
 /* 576px - 768px */
@@ -603,6 +607,10 @@ img {
         font-size: 20px;
     }
 
+    .image-desc {
+        font-size: 16px;
+    }
+
     .archi-footer {
         font-size: 14px;
     }
@@ -613,4 +621,8 @@ img {
 }
 
 /* 320px - 576px */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .image-desc {
+        font-size: 14px;
+    }
+}

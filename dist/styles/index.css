@@ -462,7 +462,10 @@ img {
 
   .archi-title {
     padding-top: 60px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+
+  .image-desc {
+    font-size: 18px; } }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
   .content {
@@ -478,11 +481,17 @@ img {
   .archi-title {
     font-size: 20px; }
 
+  .image-desc {
+    font-size: 16px; }
+
   .archi-footer {
     font-size: 14px; }
 
   .archi-footer__logo {
     font-size: 15px; } }
 /* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .image-desc {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=index.css.map */
