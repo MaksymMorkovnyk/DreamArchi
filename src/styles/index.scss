@@ -47,12 +47,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 5px;
+    padding-top: 120px;
     padding-bottom: 50px;
-    padding-top: 70px;
 }
 
 .archi-container {
@@ -93,7 +92,29 @@ img {
 .video {
     display: flex;
     justify-content: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 56.25% задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
 }
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+
+.movie-fixed {
+    max-width: 720px;
+    max-height: 405px;
+    margin: auto;
+}
+
 
 /* DROPDOWNMENU
 =============================== */
@@ -532,31 +553,64 @@ img {
         margin: auto;
     }
 
-    .video {
+    .video iframe {
+        top: 10%;
         width: 80%;
         height: 80%;
-        margin: auto;
+    }
+
+    .archi-title {
+        font-size: 22px;
+        padding-top: 80px;
+        padding-bottom: 20px;
     }
 }
 
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
-    
-    // .skill {
-    //     width: auto;
-    //     margin-bottom: 30px;
-    // }
 
+    .video iframe {
+        top: 7%;
+        width: 86%;
+        height: 86%;
+    }
+
+    .archi-title {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
 }
 
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
+
     .content {
         width: 90%;
+    }
+
+    .about-us {
+        &__text {
+            font-size: 14px;
+        }
+    }
+    
+    .selfie {
+        width: 120px;
+        height: 120px;
+    }
+
+    .archi-title {
+        font-size: 20px;
+    }
+
+    .archi-footer {
+        font-size: 14px;
+    }
+    
+    .archi-footer__logo {
+        font-size: 15px;
     }
 }
 
 /* 320px - 576px */
-@media screen and (max-width: 576px) {
-    
-}
+@media screen and (max-width: 576px) {}
