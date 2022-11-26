@@ -465,7 +465,7 @@ img {
     padding-bottom: 10px; }
 
   .image-desc {
-    font-size: 18px; } }
+    font-size: 19px; } }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
   .content {
@@ -482,7 +482,7 @@ img {
     font-size: 20px; }
 
   .image-desc {
-    font-size: 16px; }
+    font-size: 18px; }
 
   .archi-footer {
     font-size: 14px; }
@@ -492,6 +492,6 @@ img {
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
   .image-desc {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 /*# sourceMappingURL=index.css.map */
