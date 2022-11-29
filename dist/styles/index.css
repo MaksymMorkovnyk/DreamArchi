@@ -510,7 +510,12 @@ img {
     padding-bottom: 10px; }
 
   .image-desc {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .logo {
+    margin-right: 0;
+    padding-left: 10px;
+    padding-bottom: 10px; } }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
   .content {

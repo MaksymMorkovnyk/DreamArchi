@@ -151,7 +151,6 @@ img {
 
 .my-navbar__dropdown-menu a:not(:last-child) {
     border-bottom: 2px solid rgba($color: #3f4048, $alpha: 0.3);
-    ;
 }
 
 .my-project .my-navbar.navbar-light a.my-navbar__link:hover,
@@ -635,6 +634,12 @@ img {
 
     .image-desc {
         font-size: 18px;
+    }
+
+    .logo {
+        margin-right: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
 }
 
