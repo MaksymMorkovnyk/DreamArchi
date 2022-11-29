@@ -1,3 +1,7 @@
+window.onload = function(){
+  document.querySelector('.preloader').style.display = 'none';
+}
+
 particlesJS("particles-js", {
   "particles": {
     "number": {
