@@ -379,6 +379,15 @@ img {
 
 /* FOOTER
 ========================================================== */
+.scroll-up {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px; }
+
+.scroll-up__icon {
+  width: 20px; }
+
 .archi-footer {
   height: 200px;
   background: rgba(68, 69, 81, 0.7);
