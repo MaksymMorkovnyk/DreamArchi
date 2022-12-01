@@ -515,8 +515,7 @@ img {
   .navbar-collapse_MY {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px; }
+    align-items: flex-start; }
 
   .navbar-nav__my {
     display: flex;
