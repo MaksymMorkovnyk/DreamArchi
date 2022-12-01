@@ -238,7 +238,7 @@ var arrLang = {
     'project035_3': '234m2'
   },
   'ua': {
-    'home__link': 'ДІМ',
+    'home__link': 'ГОЛОВНА',
     'projects': 'ПРОЕКТИ',
     'residential__link': 'ПРИВАТНІ БУДИНКИ',
     'public__link': 'ГРОМАДСЬКІ БУДИНКИ',
