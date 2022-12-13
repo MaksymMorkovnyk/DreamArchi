@@ -554,6 +554,112 @@ img {
     position: relative;
 }
 
+/* DOTS
+========================================================== */
+
+.dots {
+    position: fixed;
+    top: 46%;
+    transform: rotate(90deg) translateZ(1px);
+    right: 0.9%;
+    z-index: 10;
+
+    & a {
+        display: inline-block;
+        margin-right: 7px;
+
+    }
+
+    &__active {
+
+        & .dots__1 {
+
+            &:before {
+                height: 1.6rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__2 {
+
+
+            &:before {
+                height: 2rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__3 {
+
+            &:before {
+                height: 2.4rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__4 {
+
+            &:before {
+                height: 2.8rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__5 {
+
+            &:before {
+                height: 2.2rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__6 {
+
+            &:before {
+                height: 2.8rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__7 {
+
+            &:before {
+                height: 2.2rem;
+                transition: all .5s;
+            }
+        }
+
+        & .dots__8 {
+
+            &:before {
+                height: 2.0rem;
+                transition: all .5s;
+            }
+        }
+    }
+
+    &__main {
+        width: .58rem;
+        height: 1.2rem;
+        position: relative;
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            right: 50%;
+            transform: translate(-50%, 0%);
+            background-color: rgba($color: #444551, $alpha: 0.5);;
+            border: 1px solid var(--white);
+            border-radius: 3rem;
+            height: inherit;
+            width: inherit;
+            transition: all .5s;
+        }
+    }
+}
+
 /*...............Loading animation*/
 .preloader {
     position: absolute;

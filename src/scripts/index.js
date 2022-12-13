@@ -367,3 +367,34 @@ $(function () {
 });
 
 /*==================================== */
+
+let dots = document.querySelectorAll('.dots__link'); // Возвращает список элементов
+let lastClicked = dots[0]; // Первый элемент из списка (счет начинается с нуля)
+
+for (let i = 0; i < dots.length; i++) {
+  // Цикл берет и кругами выполняет код. На каждом круге, i является конкретным числом.
+  // Добавляется событие 'клик' на dots[0], потом dots[1], dots[2]...
+  dots[i].addEventListener('click', function () {
+    lastClicked.classList.remove('dots__active');
+    this.classList.add('dots__active');
+    // Убрали класс с предыдущего кликнутого элемента, добавили на текущий
+
+    lastClicked = this;
+    // Обновили значение переменной - теперь она ссылается на текущий элемент. 
+    // Чтобы на следующем клике, убрать класс уже с этого.
+  });
+}
+
+let el = document.querySelector('.dots__link');
+
+window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
+
+function toggleClassOnScroll(pxAmount) {
+  let scrollTop = document.body.scrollTop;
+  
+  if(scrollTop > pxAmount) {
+    this.classList.add('dots__active');
+  } else {
+    this.classList.remove('dots__active');
+  }
+}
