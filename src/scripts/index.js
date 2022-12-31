@@ -385,16 +385,28 @@ for (let i = 0; i < dots.length; i++) {
   });
 }
 
-let el = document.querySelector('.dots__link');
+// let el = document.querySelector('.dots__link');
 
-window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
+// window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
 
-function toggleClassOnScroll(pxAmount) {
-  let scrollTop = document.body.scrollTop;
+// function toggleClassOnScroll(pxAmount) {
+//   let scrollTop = document.body.scrollTop;
   
-  if(scrollTop > pxAmount) {
-    this.classList.add('dots__active');
-  } else {
-    this.classList.remove('dots__active');
-  }
-}
+//   if(scrollTop > pxAmount) {
+//     this.classList.add('dots__active');
+//   } else {
+//     this.classList.remove('dots__active');
+//   }
+// }
+
+// var postion = $('#target').offset().top,
+//     height = $('#target').height();
+// $(document).on('scroll', function (){
+//   var scroll = $(document).scrollTop();
+//   if(scroll  > postion && scroll < (postion + height) ) {
+//      $('.dots__link').addClass('dots__active')
+//      }else {
+//         $('.dots__link').removeClass('dots__active')
+//      }
+// })
+
