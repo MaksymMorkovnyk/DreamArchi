@@ -43,6 +43,10 @@ body {
     padding-left: 20px;
 }
 
+.logoFooter {
+    width: 40px;
+}
+
 .archi-title {
     display: flex;
     justify-content: center;
@@ -171,6 +175,10 @@ img {
 .my-project .my-navbar .my-navbar__dropdown-menu a:focus,
 .my-project .my-navbar .my-navbar__dropdown-menu a:active {
     background-color: unset;
+}
+
+.navbar-nav__my992 {
+    display: none;
 }
 
 @media (max-width: 991px) {
@@ -756,9 +764,17 @@ img {
     }
 
     .navbar-nav__my {
+        display: none;
+    }
+
+    .navbar-nav__my992 {
         display: flex;
         flex-direction: row;
-        padding-top: 20px;
+        padding: 3px;
+    }
+
+    .my-navbar__linkENUA {
+        border-right: 2px solid rgba($color: #3f4048, $alpha: 0.3);
     }
 
     .video iframe {

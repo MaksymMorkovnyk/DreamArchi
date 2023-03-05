@@ -374,7 +374,7 @@ let lastClicked = dots[0]; // Первый элемент из списка (с�
 for (let i = 0; i < dots.length; i++) {
   // Цикл берет и кругами выполняет код. На каждом круге, i является конкретным числом.
   // Добавляется событие 'клик' на dots[0], потом dots[1], dots[2]...
-  dots[i].addEventListener('click', function () {
+  dots[i].addEventListener('click' || 'scroll', function () {
     lastClicked.classList.remove('dots__active');
     this.classList.add('dots__active');
     // Убрали класс с предыдущего кликнутого элемента, добавили на текущий
@@ -385,13 +385,24 @@ for (let i = 0; i < dots.length; i++) {
   });
 }
 
+// let postion = $('#target').offset().top,
+//     height = $('#target').height();
+// $(document).on('scroll', function (){
+//   var scroll = $(document).scrollTop();
+//   if(scroll  > postion && scroll < (postion + height) ) {
+//      $('body').addClass('dots__active')
+//      }else {
+//         $('body').removeClass('dots__active')
+//      }
+// })
+
 // let el = document.querySelector('.dots__link');
 
 // window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
 
 // function toggleClassOnScroll(pxAmount) {
 //   let scrollTop = document.body.scrollTop;
-  
+
 //   if(scrollTop > pxAmount) {
 //     this.classList.add('dots__active');
 //   } else {
@@ -409,4 +420,3 @@ for (let i = 0; i < dots.length; i++) {
 //         $('.dots__link').removeClass('dots__active')
 //      }
 // })
-
