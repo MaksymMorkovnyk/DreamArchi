@@ -234,11 +234,13 @@ img {
         "begin project019 project019 ."
         "begin . . ."
         "begin . project026 project026"
-        "begin project027 project026 project026"
-        "begin project027 . ."
-        "begin project030 project030 ."
-        "begin project030 project030 ."
-        "begin . . .";
+        "begin . project026 project026"
+        "begin . . ."
+        "begin project031 project031 ."
+        "begin project031 project031 ."
+        "begin . . ."
+        "begin . project038 project038"
+        "begin . project038 project038";
 
     grid-gap: 10px;
     margin: 10px;
@@ -412,56 +414,80 @@ img {
 
 .grid> :nth-child(28) {
     background-color: var(--light-grey);
-    grid-column: project027;
-    grid-row: project027;
+    grid-column: content;
+    grid-row: 14;
 }
 
 .grid> :nth-child(29) {
     background-color: var(--light-grey);
-    grid-column: content 2;
+    grid-column: content;
     grid-row: 15;
 }
 
 .grid> :nth-child(30) {
     background-color: var(--light-grey);
-    grid-column: content 3;
+    grid-column: content 2;
     grid-row: 15;
 }
 
 .grid> :nth-child(31) {
     background-color: var(--light-grey);
-    grid-column: project030;
-    grid-row: project030;
+    grid-column: content 3;
+    grid-row: 15;
 }
 
 .grid> :nth-child(32) {
     background-color: var(--light-grey);
-    grid-column: content 3;
-    grid-row: 16;
+    grid-column: project031;
+    grid-row: project031;
 }
 
 .grid> :nth-child(33) {
     background-color: var(--light-grey);
     grid-column: content 3;
-    grid-row: 17;
+    grid-row: 16;
 }
 
 .grid> :nth-child(34) {
+    background-color: var(--light-grey);
+    grid-column: content 3;
+    grid-row: 17;
+}
+
+.grid> :nth-child(35) {
     background-color: var(--light-grey);
     grid-column: content;
     grid-row: 18;
 }
 
-.grid> :nth-child(35) {
+.grid> :nth-child(36) {
     background-color: var(--light-grey);
     grid-column: content 2;
     grid-row: 18;
 }
 
-.grid> :nth-child(36) {
+.grid> :nth-child(37) {
     background-color: var(--light-grey);
     grid-column: content 3;
     grid-row: 18;
+}
+
+.grid> :nth-child(38) {
+    background-color: var(--light-grey);
+    grid-column: content;
+    grid-row: 19;
+}
+
+.grid> :nth-child(39) {
+    background-color: var(--light-grey);
+    grid-column: project038;
+    grid-row: project038;
+}
+
+.grid> :nth-child(40) {
+    background-color: var(--light-grey);
+    grid-column: content;
+    grid-row: 20;
 }
 
 .about-us {
