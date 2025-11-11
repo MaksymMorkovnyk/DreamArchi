@@ -779,6 +779,26 @@ img {
     padding-left: 10px;
     padding-bottom: 10px;
   }
+
+  /* Вертикальна паличка між EN та UA у мобільній версії */
+  .navbar-nav__my992 .my-navbar__linkENUA {
+    position: relative;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar-nav__my992 .my-navbar__linkENUA::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* колір як у десктопної версії */
+  }
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
@@ -812,4 +832,28 @@ img {
   .image-desc {
     font-size: 16px;
   }
+}
+/* Плавна анімація відкриття/закриття підменю PROJECTS */
+.my-navbar__dropdown-menu {
+  display: block;
+  /* важливо для керування через opacity */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  -webkit-transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease 0.1s, visibility 0.4s, -webkit-transform 0.4s ease 0.1s;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease 0.1s, visibility 0.4s, -webkit-transform 0.4s ease 0.1s;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s, visibility 0.4s;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s, visibility 0.4s, -webkit-transform 0.4s ease 0.1s;
+}
+
+.my-navbar__dropdown.show .my-navbar__dropdown-menu {
+  max-height: 500px;
+  /* достатньо для відображення всіх пунктів */
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }

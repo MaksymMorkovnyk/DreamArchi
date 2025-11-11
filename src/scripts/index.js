@@ -444,3 +444,22 @@ for (let i = 0; i < dots.length; i++) {
 //         $('.dots__link').removeClass('dots__active')
 //      }
 // })
+
+// Закривати мобільне меню після натискання на пункт, крім "PROJECTS"
+document.querySelectorAll('.navbar-nav a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const isProjects = link.textContent.trim().toUpperCase() === 'PROJECTS';
+    const isDropdownItem = link.closest('.dropdown-menu'); // підменю
+
+    // якщо це підменю — ховаємо меню після кліку
+    if (isDropdownItem) {
+      $('.navbar-collapse').collapse('hide');
+    }
+    // якщо це не "PROJECTS" і не підменю — теж ховаємо
+    else if (!isProjects) {
+      $('.navbar-collapse').collapse('hide');
+    }
+    // якщо це "PROJECTS" — не робимо нічого (даємо йому розкритися)
+  });
+});
+
