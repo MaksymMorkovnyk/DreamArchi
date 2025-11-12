@@ -781,9 +781,9 @@ var pJS = function (tag_id, params) {
         new pJS.fn.particle(
           pJS.particles.color,
           pJS.particles.opacity.value, {
-            'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
-            'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
-          }
+          'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
+          'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
+        }
         )
       )
       if (i == nb - 1) {
@@ -951,9 +951,9 @@ var pJS = function (tag_id, params) {
         dist_mouse = Math.sqrt(dx_mouse * dx_mouse + dy_mouse * dy_mouse);
 
       var normVec = {
-          x: dx_mouse / dist_mouse,
-          y: dy_mouse / dist_mouse
-        },
+        x: dx_mouse / dist_mouse,
+        y: dy_mouse / dist_mouse
+      },
         repulseRadius = pJS.interactivity.modes.repulse.distance,
         velocity = 100,
         repulseFactor = clamp((1 / repulseRadius) * (-1 * Math.pow(dist_mouse / repulseRadius, 2) + 1) * repulseRadius * velocity, 0, 50);
@@ -1236,8 +1236,8 @@ var pJS = function (tag_id, params) {
 
     /* prepare to create img with colored svg */
     var svg = new Blob([coloredSvgXml], {
-        type: 'image/svg+xml;charset=utf-8'
-      }),
+      type: 'image/svg+xml;charset=utf-8'
+    }),
       DOMURL = window.URL || window.webkitURL || window,
       url = DOMURL.createObjectURL(svg);
 
